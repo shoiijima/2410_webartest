@@ -16,18 +16,39 @@
             embedded
             gesture-detector
         >
+            <!-- Marker 1: original marker.patt showing asset.png -->
             <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt"
+                url="assets/marker1.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
                 <a-image
-                    src="assets/asset.png"
+                    src="assets/asset1.png"
+                    scale="1 1 1"
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+            </a-marker>
+
+            <!-- Marker 2: new marker2.patt showing asset2.png -->
+            <a-marker
+                id="animated-marker2"
+                type="pattern"
+                preset="custom"
+                url="assets/marker2.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerB"
+            >
+                <a-image
+                    src="assets/asset2.png"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
